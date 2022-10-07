@@ -9,6 +9,10 @@
     <!-- <counter-btn></counter-btn> -->
 
     <!-- dynamic component -->
+
+    <!-- without mentioning here about index-it will not-->
+    <nuxt-page></nuxt-page>
+
     <a href="#" @click="view('home')">Home</a>
     <a href="#" @click="view('counter')">Counter</a>
 
@@ -30,5 +34,16 @@ function view(name) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  margin: 0.25rem 0.5rem;
+  text-decoration: none;
+  &:hover {
+    border-color: #793737;
+  }
 }
 </style>
